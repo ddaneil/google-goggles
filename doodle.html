@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doodle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        background-color: rgb(32, 33, 36);
+        font-family: "Montserrat", "Arial", sans-serif;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+
+      body {
+        min-height: 100vh;
+      }
+
+      header {
+        letter-spacing: 0;
+        height: 60px;
+        margin: 10px 20px;
+        font-weight: 400;
+        float: right;
+        font-size: 14px;
+      }
+
+      header nav a.text {
+        display: inline-block;
+        letter-spacing: 1px;
+        padding: 0 5px;
+        margin: 0;
+      }
+
+      header nav a.text:hover {
+        text-decoration: underline;
+      }
+
+      header nav div {
+        display: inline-block;
+        border-radius: 25px;
+      }
+
+      header nav div:hover {
+        background-color: rgb(45, 46, 49);
+      }
+
+      header nav a.login {
+        display: inline-block;
+        height: 40px;
+        width: 85px;
+        background-color: rgb(23, 23, 23);
+        border-radius: 25px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        padding: 0px;
+        margin: 5px;
+      }
+
+      header nav a.dots {
+        display: inline-block;
+        letter-spacing: 0px;
+        font-weight: 1000;
+        font-size: 20px;
+        padding: 7px 9px 9px 9px;
+        border-radius: 25px;
+      }
+
+      header nav a.dots:hover {
+        background-color: rgb(45, 46, 49);
+      }
+
+      section.header form {
+        border: transparent;
+      }
+
+      section.header form input[type="text"] {
+        border: transparent;
+        width: 35%;
+        text-align: left;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: 1px solid rgb(95, 99, 104);
+        border-radius: 50px;
+      }
+
+      section.header form input[type="text"]:hover {
+        background-color: rgb(48, 49, 52);
+        border-color: rgb(48, 49, 52);
+      }
+
+      section.header h1 {
+        font-size: 100px;
+        text-shadow: 3px 3px #000;
+      }
+
+      section.header h1 span.D {
+        color: dodgerblue;
+      }
+
+      section.header h1 span.e {
+        color: red;
+      }
+
+      section.header h1 span.o {
+        color: gold;
+      }
+
+      section.header h1 span.l {
+        color: green;
+      }
+
+      section.header {
+        padding-top: 100px;
+      }
+
+      div.button {
+        margin: 0 auto;
+        margin-top: 25px;
+      }
+
+      div.button a {
+        font-weight: 500;
+        letter-spacing: 0;
+        display: inline-block;
+        border-radius: 4px;
+        padding: 10px 15px;
+        text-shadow: 1px 1px #000;
+        background-color: rgb(48, 49, 52);
+        border: 1px solid transparent;
+      }
+
+      div.button a:hover {
+        border: 1px solid rgb(95, 99, 104);
+      }
+
+      div.offering p,
+      div.offering a {
+        display: inline-block;
+        padding: 30px 0 10px;
+        letter-spacing: 0;
+        font-size: 12px;
+      }
+
+      div.offering p {
+        color: rgb(191, 191, 191);
+      }
+
+      div.offering a {
+        color: rgb(153, 195, 255);
+        padding: 0 10px;
+      }
+
+      div.offering a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+      }
+
+      footer div {
+        font-size: 13px;
+        letter-spacing: 0;
+        display: block;
+        bottom: 0;
+        height: 45px;
+        background-color: rgb(23, 23, 23);
+        color: white;
+      }
+
+      footer hr.c {
+        color: rgb(49, 51, 53);
+      }
+
+      footer div p.footer1,
+      footer div a.footer2 {
+        text-align: left;
+        background-color: rgb(23, 23, 23);
+        padding: 15px 30px 0px;
+        margin: 0px 10px;
+      }
+
+      footer div a.footer3 {
+        display: inline-block;
+        text-align: right;
+      }
+
+      footer div a.footer2,
+      footer div a.footer3 {
+        background-color: transparent;
+        display: inline-block;
+        margin: 0;
+      }
+
+      footer div a.footer2 {
+        padding: 10px 10px 0;
+      }
+
+      footer div a.footer31 {
+        background-color: transparent;
+        display: inline-block;
+        padding-left: 40.75vw;
+        margin: 0 0 10px;
+      }
+
+      footer div a.footer3 {
+        padding: 10px 10px 0;
+      }
+
+      footer div a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="text">Gmail</a>
+        <a href="#" class="text">Images</a>
+        <a href="#" class="dots">⁝⁝⁝</a>
+        <div>
+          <a href="#" class="login">Login</a>
+        </div>
+      </nav>
+      <div style="clear: both"></div>
+    </header>
+    <section class="header">
+      <h1>
+        <span class="D">D</span><span class="e">o</span><span class="o">o</span
+        ><span class="D">d</span><span class="l">l</span
+        ><span class="e">e</span>
+      </h1>
+      <h1>
+        <form action="google.com/search" method="get" target="_self">
+          <input
+            type="text"
+            name="q"
+            id="Doodle Seirtch"
+            placeholder="Seritch"
+          />
+        </form>
+      </h1>
+    </section>
+    <div class="button">
+      <a href="#">Doodle Seirtch</a>
+      <a href="#">I'm Not Lucky</a>
+    </div>
+    <div class="offering">
+      <p>Doodle offered in:</p>
+      <a href="#">Indonesia</a>
+      <a href="#">Basa Bali</a>
+    </div>
+    <footer>
+      <div>
+        <p class="footer1">Indonesia</p>
+      </div>
+      <hr
+        style="
+          color: rgb(49, 51, 53);
+          border: 1px solid transparent;
+          width: 2px;
+        "
+        class="c"
+      />
+      <div>
+        <a href="#" class="footer2">About</a>
+        <a href="#" class="footer2">Advertising</a>
+        <a href="#" class="footer2">Business</a>
+        <a href="#" class="footer2">How Search Works</a>
+        <a href="#" class="footer31">Privacy</a>
+        <a href="#" class="footer3">Terms</a>
+        <a href="#" class="footer3">Settings</a>
+      </div>
+    </footer>
+  </body>
+</html>
